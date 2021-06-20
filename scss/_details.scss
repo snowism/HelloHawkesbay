@@ -1,0 +1,87 @@
+.list-detail {
+  position: relative;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+.detail-hide {
+display: none;
+
+}
+
+.detail-img {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hotel-detail-img {
+  background-image: url(/img/hotel02.jpeg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hostel-detail-img {
+  background-image: url(/img/hostel02.jpeg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.motel-detail-img {
+  background-image: url(/img/lodge02.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.house-detail-img {
+  background-image: url(/img/house02.jpeg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.detail-close {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  color: $dark-beige;
+}
+
+.detail-info {
+  max-width: 100vw;
+
+  border-radius: 20px 20px 0px 0px;
+  background-color: white;
+  padding: 5%;
+  position: absolute;
+  top: 250px;
+
+  p {
+    padding: 2%;
+  }
+}
+
+.room-price {
+  text-align: right;
+  // background-color: palevioletred;
+}
+
+.room-type {
+  font-style: italic;
+}
+
+.price, .total-price {
+  font-size: 2rem;
+}
+
+.end-box {
+  text-align: center;
+}
+

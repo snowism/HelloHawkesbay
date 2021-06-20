@@ -1,0 +1,32 @@
+.page-four {
+//   display: none;
+  position: relative;
+  padding-top: 100px;
+
+  h2 {
+    text-align: center;
+    color: $dark-green;
+    font-size: 1.6rem;
+  }
+}
+
+.form-container {
+  width: 360px;
+  margin: 5%;
+  padding: 2%;
+  background-color: rgba(7, 38, 32, 0.8);
+  border-radius: 20px;
+  
+color: $light-beige;
+
+p {
+    
+    padding: 1rem 1rem 0;
+}
+}
+
+.input-name {
+    
+    padding: 1em 1rem 1em 1em;
+
+}

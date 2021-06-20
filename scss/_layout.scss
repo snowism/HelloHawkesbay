@@ -1,0 +1,179 @@
+
+
+
+.all-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  scroll-behavior: smooth;
+ 
+  background-image: url(/img/back_g.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: top;
+  overflow-y: scroll;
+}
+
+
+.app-section {
+  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+
+.landing-page {
+  
+  position: relative;
+  // display: none;
+  overflow-y: hidden;
+  background-image: url(/img/back06.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+ 
+  
+}
+
+
+
+.page-two {
+  padding-top: 120px;
+  position: relative;
+  overflow-y: hidden;
+  
+  // display: none;
+}
+
+.page-three {
+  // display: none;
+  position: relative;
+  padding-top: 80px;
+}
+
+
+.title-container {
+  display: block;
+  position: absolute;
+  width: 300px;
+  transform: translate(-45%);
+  top: 18%;
+  left: 50%;
+}
+
+
+.title span {
+  transform: skew(-10deg);
+  display: block;
+  float: left;
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px,
+    #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
+  min-width: 10px;
+  min-height: 10px;
+  position: relative;
+}
+
+.title:nth-child(1) {
+  font-size: 2.4rem;
+  color: #f28b30;
+}
+.title:last-child {
+  font-size: 2.4rem;
+  color: #467970;
+}
+
+.info-container {
+  border-radius: 20px;
+  width: 360px;
+  background-color:$eight-white;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.user-input {
+  width: 270px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.guest {
+  width: 300px;
+
+  padding: 2%;
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  align-items: center;
+}
+
+.c-in,
+.c-out {
+  width: 160px;
+}
+
+.form {
+  background-color: $half-white;
+ 
+  height: 30px;
+  width: 230px;
+  font-size: medium;
+  text-align: center;
+}
+
+.list-container {
+  .hide {
+    display: none;
+  }
+}
+
+.show {
+  display: block;
+}
+
+// page six (confirm p)
+
+.page-six {
+  position: relative;
+  padding-top: 100px;
+}
+
+.confirm-container {
+  width: 280px;
+  background-color: $eight-white;
+  border-radius: 20px;
+  text-align: center;
+  margin: 50px auto;
+padding: 6%;
+position: relative;
+  // display: none;
+
+  
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+
+

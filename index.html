@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/assets/lightpick.css" />
+    <link rel="stylesheet" href="/assets/materialize.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diplomata&family=Elsie+Swash+Caps:wght@900&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"></script>
+    <script src="/assets/lightpick.js"></script>
+    <script src="/assets/materialize.js"></script>
+  </head>
+
+  <body>
+    <div class="all-wrapper">
+      <div class="app-section landing-page">
+        <div>
+          <!-- <object data="/test.svg" class="mysvg framesvg" type="image/svg+xml" id="SVG" />  -->
+        </div>
+
+        <div class="title-container">
+          <h1>
+            <span class="title">Hello, </span><br />
+            <span class="title">Hawke's bay</span>
+          </h1>
+        </div>
+
+        <button class="btn btn-enter" data-target=".page-two">
+          Find your journey
+        </button>
+      </div>
+      <div class="app-section page-two">
+        <div class="info-container">
+          <div class="user-input">
+            <i class="fa fa-calendar-check-o"></i>
+            <input id="start" class="form" />
+          </div>
+
+          <div class="guest">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <h3>Guest</h3>
+            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+            <span class="user-guest">0</span>
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </div>
+
+          <div class="date">
+            <div class="c-in">
+              <p class="user-checkin"></p>
+            </div>
+
+            <div class="c-out">
+              <p class="user-checkout"></p>
+            </div>
+          </div>
+
+          <span class="user-nights"></span>
+        </div>
+
+        <button class="btn btn-search next-step" data-target=".page-three">
+          Search
+        </button>
+      </div>
+
+      <!--lists page-->
+      <div class="app-section page-three">
+        <div class="user-info">
+          <p class="user-dates">Dates</p>
+          <span class="pax">Guest</span>
+          <p class="user-nights">0</p>
+        </div>
+
+        <button class="btn edit next-step" data-target=".page-two">EDIT</button>
+
+        <!--lists -->
+
+        <div class="list-container">
+          <div class="list hotel hide" data-value="hotel">
+            <div
+              data-value="hotel"
+              class="accommo-img hotel-img"
+              data-price="157"
+            ></div>
+            <div class="accommo-info">
+              <ul>
+                <li>
+                  <h2>The county Hotel</h2>
+                </li>
+                <li>
+                  <span class="star"
+                    ><i class="fa fa-star" aria-hidden="true"></i> 4.2</span
+                  >
+                </li>
+             
+                <li>$ <span class="room-price">157</span> /night</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list hostel hide" data-value="hostel">
+            <div
+              class="accommo-img hostel-img"
+              data-value="hostel"
+              data-price="30"
+            ></div>
+            <div class="accommo-info">
+              <ul>
+                <li>
+                  <h2>Criterion Hostel</h2>
+                </li>
+                <li>
+                  <span class="star"
+                    ><i class="fa fa-star" aria-hidden="true"></i> 3.6</span
+                  >
+                </li>
+              
+                <li>$<span class="room-price"> 30</span> /night</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list motel hide" data-value="motel">
+            <div
+              class="accommo-img motel-img"
+              data-value="motel"
+              data-price="90"
+            ></div>
+            <div class="accommo-info">
+              <ul>
+                <li>
+                  <h2>Beachfront Motel</h2>
+                </li>
+                <li>
+                  <span class="star"
+                    ><i class="fa fa-star" aria-hidden="true"></i> 3.8</span
+                  >
+                </li>
+              
+                <li>$ <span class="room-price">90</span> /night</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list house hide" data-value="house">
+            <div
+              class="accommo-img house-img"
+              data-value="house"
+              data-price="240"
+            ></div>
+            <div class="accommo-info">
+              <ul>
+                <li>
+                  <h2>Hawke's bay haven House</h2>
+                </li>
+                <li>
+                  <span class="star"
+                    ><i class="fa fa-star" aria-hidden="true"></i> 4.7</span
+                  >
+                </li>
+               
+                <li>$ <span class="room-price">240</span> /night</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- details -->
+      <div data-type="hotel" class="list-detail detail-hide">
+        <div class="detail-img hotel-detail-img">
+          <i class="fa fa-times-circle detail-close" aria-hidden="true"></i>
+        </div>
+
+        <div class="detail-info hotel-info">
+          <h2>The County Hotel</h2>
+          <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 12 Browning
+            Street, 4010 Napier, New Zealand
+          </p>
+
+          <div class="room-price">
+            $ <span class="price">157</span> /Night <br />
+          </div>
+
+          <p>
+            <span class="room-type">Superior Queen Room</span><br /><br />
+            Located in the centre of picturesque Napier, this luxurious 5-star
+            hotel is located in the center of the Art Deco Precinct. Originally
+            built for the Hawke’s Bay County Council in 1909, The County Hotel
+            is one of only two significant buildings to have survived the
+            massive 1931 earthquake. The hotel presents a charming Edwardian Art
+            Deco grandeur, preserving its elegant heritage.
+          </p>
+
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" class="meal" value="28" />
+                <span class="breakfast">Fabulous breakfast NZD 28/day</span>
+              </label>
+            </p>
+          </form>
+
+          <div class="end-box">
+            <p>Total Price <br /><span class="total-price"></span></p>
+
+            <button class="btn btn-reserve next-step" data-target=".page-four">
+              I'll reserve
+            </button>
+          </div>
+        </div>
+      </div>
+      <div data-type="hostel" class="list-detail detail-hide">
+        <div class="detail-img hostel-detail-img">
+          <i class="fa fa-times-circle detail-close" aria-hidden="true"></i>
+        </div>
+        <div class="detail-info hostel-info">
+          <h2>Criterion Hostel</h2>
+          <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 48 Emerson
+            Street, 4110 Napier, New Zealand
+          </p>
+          <div class="room-price">
+            $ <span class="price">30</span> /Night <br />
+          </div>
+
+          <p>
+            <span class="room-type"
+              >Bed in 4-Bed Mixed Dormitory Room / 1 bunk bed</span
+            ><br /><br />
+            Criterion Art Deco Backpackers is a unique, Spanish Mission/Art Deco
+            style building, located in the heart of Napier and just 1 minutes'
+            walk from the information centre.
+          </p>
+
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" class="meal" value="20" />
+                <span>Fabulous breakfast NZD 20/day </span>
+              </label>
+            </p>
+          </form>
+
+          <div class="end-box">
+            <p>Total Price <br /><span class="total-price"></span></p>
+            <button class="btn btn-reserve next-step" data-target=".page-four">
+              I'll reserve
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-type="motel" class="list-detail detail-hide">
+        <div class="detail-img motel-detail-img">
+          <i class="fa fa-times-circle detail-close" aria-hidden="true"></i>
+        </div>
+        <div class="detail-info motel-info">
+          <h2>Beachfront Motel</h2>
+          <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 373 Marine
+            Parade, 4140 Napier, New Zealand
+          </p>
+          <div class="room-price">
+            $ <span class="price">90</span> /Night <br />
+          </div>
+
+          <p>
+            <span class="room-type">Executive Studio with city view</span
+            ><br /><br />
+            Overlooking Hawke’s Bay, Beachfront Motel offers self-contained
+            studios and apartments, each with a spa bath and full kitchen. Just
+            5 minutes’ walk from the famous National Aquarium, it includes free
+            on-site parking. Guests receive 500MB of free WiFi per stay.
+          </p>
+
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" class="meal" value="17" />
+                <span>Fabulous breakfast NZD 17/day </span>
+              </label>
+            </p>
+          </form>
+
+          <div class="end-box">
+            <p>Total Price <br /><span class="total-price"></span></p>
+            <button class="btn btn-reserve next-step" data-target=".page-four">
+              I'll reserve
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-type="house" class="list-detail detail-hide">
+        <div class="detail-img house-detail-img">
+          <i class="fa fa-times-circle detail-close" aria-hidden="true"></i>
+        </div>
+        <div class="detail-info house-info">
+          <h2>Hawke's bay haven House</h2>
+          <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> 8 Orotu Drive,
+            4112 Napier, New Zealand
+          </p>
+          <div class="room-price">
+            $ <span class="price">240</span> /Night <br />
+          </div>
+          <p>
+            <span class="room-type">Four-Bedroom House</span><br /><br />
+            Featuring garden views, Hawke's Bay Haven offers accommodation with
+            a garden and a patio, around 3.1 km from Mission Estate Winery. The
+            air-conditioned accommodation is 6 km from McLean Park, and guests
+            benefit from private parking available on site and free WiFi.
+          </p>
+
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" class="meal" value="28" />
+                <span>Fabulous breakfast NZD 28/day </span>
+              </label>
+            </p>
+          </form>
+
+          <div class="end-box">
+            <p>Total Price <br /><span class="total-price"></span></p>
+            <button class="btn btn-reserve next-step" data-target=".page-four">
+              I'll reserve
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- page-four -->
+      <div class="app-section page-four">
+        <h2>Enter your details</h2>
+
+        <div class="form-container">
+          <form class="form-details">
+            <div class="input-field col s6 input-name">
+              <input id="name" type="text" class="validate" />
+              <label for="name"> Name</label>
+            </div>
+
+            <div class="input-field col s6 input-name">
+              <input id="email" type="email" class="validate" />
+              <label for="email"> Email</label>
+            </div>
+
+            <p>Who are you booking for?</p>
+            <p>
+              <label>
+                <input name="group1" type="radio" checked />
+                <span>I am the main guest</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="group1" type="radio" />
+                <span>Booking is for someone else</span>
+              </label>
+            </p>
+          </form>
+        </div>
+
+        <div class="btn-box">
+          <button class="btn next-step" data-target=".page-three">Back</button>
+          <button class="btn next-step" data-target=".page-five">Next</button>
+        </div>
+      </div>
+
+      <!-- page-five : payment-->
+      <div class="app-section page-five">
+        <h2>Payment</h2>
+
+        <div class="form-container">
+          <div class="col">
+            <div class="input-field col s6 input-name">
+              <input type="text" class="validate" />
+              <label for="name"> Name</label>
+            </div>
+
+            <div class="col-xs-5">
+              <div class="input-field col s6 input-name">
+                <input id="cardnumber" type="text" class="validate" />
+                <label for="cardnumber"> Card Number</label>
+              </div>
+            </div>
+
+            <div class="col row-three">
+              <div class="col-xs-2">
+                <div class="input-field col s6 input-name">
+                  <input id="date" type="text" class="validate" />
+                  <label for="date"> Valid date</label>
+                </div>
+              </div>
+
+              <div class="col-xs-2">
+                <div class="input-field col s6 input-name">
+                  <input type="text" class="validate" />
+                  <label for="date"> CVV / CVC *</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="small"
+            >* CVV or CVC is the card security code, unique three digits number
+            on the back of your card seperate from its number.</span
+          >
+        </div>
+
+        <div class="btn-box">
+          <button class="btn next-step" data-target=".page-four">Back</button>
+          <button class="btn next-step" data-target=".page-six">Next</button>
+        </div>
+      </div>
+
+      <!-- page-six: confirm-page -->
+      <div class="app-section page-six">
+        <div class="confirm-container">
+          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+
+          <p>Your booking is confirmed.</p>
+          <h3>Thank you!</h3>
+
+          <p>
+            We are pleased to inform you that reservation request has been
+            recieved and confirmed. We send booking details to your email
+            address.
+          </p>
+        </div>
+
+        <button class="btn btn-bthome next-step" data-target=".landing-page">
+          Back to Home
+        </button>
+      </div>
+    </div>
+
+    <script src="/js/landinganime.js"></script>
+    <script src="/js/page.js"></script>
+    <script src="/js/calendar.js"></script>
+    <script src="/js/guest.js"></script>
+    <script src="/js/detailspages.js"></script>
+    <script src="/js/filtering.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+.user-info {
+  border-radius: 20px;
+  width: 350px;
+  height: 40px;
+  background-color: $eight-white;
+  position: fixed;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  .pax {
+    color: $dark-green;
+  }
+}
+
+.total {
+  width: 300px;
+}
+
+.total,
+.user-info {
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.list {
+  background-color: $eight-white;
+  width: 350px;
+  min-height: 120px;
+  margin: auto;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+
+  .star {
+    color: $dark-red;
+  }
+  
+  .room-price {
+   
+    text-align: right;
+    font-size: 1.4rem;
+    
+  }
+
+  
+  
+}
+
+
+.accommo-img {
+  border-radius: 20px 0 0 20px;
+
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  min-width: 150px;
+  min-height: 120px;
+  background-repeat: none;
+}
+
+.hotel-img {
+  background-image: url(/img/hotel01.png);
+}
+
+.motel-img {
+  background-image: url(/img/lodge01.png);
+}
+
+.house-img {
+  background-image: url(/img/house.png);
+}
+
+.hostel-img {
+  background-image: url(/img/hostel01.png);
+}
+
+.accommo-info {
+  padding: 0.4rem;
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+}
+
+.accommo-info > ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  li {
+    list-style: none;
+    margin: 0;
+  }
+}
